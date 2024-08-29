@@ -6,7 +6,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class WeatherService {
-  private apiKey = '48efc5b5aba7bff12e8425325c851dd4';
+  private apiKey = '';
   private apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Manta,EC&appid=${this.apiKey}&units=metric&lang=es`;
   private weatherSubject = new BehaviorSubject<any>(null); // Para emitir los datos del clima
   public weather$ = this.weatherSubject.asObservable(); // Observable público para que los componentes se suscriban
