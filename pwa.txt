@@ -1,0 +1,7 @@
+ng add @angular/pwa
+ng build
+npx http-server -p 8080 -c-1 dist/<project-name>/browser
+http://localhost:8080
+
+ng build
+npx http-server -p 8080 -c-1 dist/u3lab2-serviceworker/browser
