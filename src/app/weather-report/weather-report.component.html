@@ -1,0 +1,19 @@
+<div *ngIf="weatherData; else loading">
+    <div class="weather-card">
+      <h3>Clima en {{ weatherData.name }}, Ecuador</h3>
+      <div class="weather-info">
+        <img [src]="getWeatherIconUrl(weatherData.weather[0].icon)" alt="Estado del clima" class="weather-icon">
+        <div class="weather-details">
+          <p><strong>Temperatura:</strong> {{ weatherData.main.temp }} °C</p>
+          <p><strong>Humedad:</strong> {{ weatherData.main.humidity }}%</p>
+          <p><strong>Estado:</strong> {{ weatherData.weather[0].description | titlecase }}</p>
+          <p><strong>Viento:</strong> {{ weatherData.wind.speed }} m/s</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #loading>
+    <p>Cargando datos del clima...</p>
+  </ng-template>
+  

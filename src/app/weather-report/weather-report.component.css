@@ -1,0 +1,32 @@
+.weather-card {
+    background-color: #7de6da;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .weather-details {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .weather-details p {
+    margin: 5px 0;
+  }
+  
